@@ -16,7 +16,6 @@
             margin: 0;
         }
 
-
         .calculadora {
             background: rgb(252, 250, 250);
             padding: 20px;
@@ -58,10 +57,19 @@
             display: flex;
             justify-content: center;
         }
+        .caixa{
+            width: 175px;
+            height: 155px;
+            background-color: black;
+            border: 1px white;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 
+    <div class="container">
+        <div class="caixa">
     <div id="calculadora">
         <input type="text" id="resultado" placeholder="0" disabled>
         <br>
@@ -88,6 +96,8 @@
         <button onclick="arredondar()">Arredondar</button>
         <button onclick="raizQuadrada()">Raiz Quadrada</button>
         <button onclick="limpar()">C</button>
+    </div>
+        </div>
     </div>
 
     <script>
